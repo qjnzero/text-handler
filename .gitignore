@@ -1,12 +1,13 @@
 .mtj.tmp/
 .idea
+target
+logs
 out
 *.iml
 .gradle
 build
 *.class
 *.log
-logs
 *.ctxt
 *.jar
 *.war
