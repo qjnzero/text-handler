@@ -21,4 +21,14 @@ public class Paragraph implements Text {
         }
         return String.valueOf(paragraph);
     }
+
+    @Override
+    public List<Text> getChildren() {
+        return new ArrayList<>(children);
+    }
+
+    @Override
+    public int getAmountOfChildren() {
+        return children.size();
+    }
 }

@@ -20,4 +20,14 @@ public class Lexeme implements Text {
         }
         return String.valueOf(lexeme);
     }
+
+    @Override
+    public List<Text> getChildren() {
+        return children;
+    }
+
+    @Override
+    public int getAmountOfChildren() {
+        return children.size();
+    }
 }

@@ -20,4 +20,14 @@ public class Punctuation implements Text {
         }
         return String.valueOf(punct);
     }
+
+    @Override
+    public List<Text> getChildren() {
+        return new ArrayList<>(children);
+    }
+
+    @Override
+    public int getAmountOfChildren() {
+        return children.size();
+    }
 }

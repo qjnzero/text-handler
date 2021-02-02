@@ -23,4 +23,14 @@ public class MajorText implements Text {
         }
         return String.valueOf(text);
     }
+
+    @Override
+    public List<Text> getChildren() {
+        return new ArrayList<>(children);
+    }
+
+    @Override
+    public int getAmountOfChildren() {
+        return children.size();
+    }
 }

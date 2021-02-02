@@ -21,4 +21,14 @@ public class Sentence implements Text {
         }
         return String.valueOf(sentence);
     }
+
+    @Override
+    public List<Text> getChildren() {
+        return new ArrayList<>(children);
+    }
+
+    @Override
+    public int getAmountOfChildren() {
+        return children.size();
+    }
 }
